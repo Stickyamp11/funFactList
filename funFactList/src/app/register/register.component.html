@@ -1,0 +1,12 @@
+<section>
+    <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <label for="name">Username: </label>
+        <input type="text" class="input" formControlName="username" />
+        <label for="name">Email: </label>
+        <input type="text" class="input" formControlName="email" />
+        <label for="name">Password: </label>
+        <input type="password" class="input" formControlName="password" />
+    </form>
+    <button (click)="onSubmit()">Register</button>
+    <span *ngIf="errorMessage">{{errorMessage}}</span>
+</section>
