@@ -1,0 +1,29 @@
+.fact-table-wrapper{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.fact-main-table{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 70%;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+
+  }
+
+  tr:nth-child(even) {
+    background-color: #d6ecdc;
+  }
+
+  tr:hover {background-color: #d6c3ae;}
+
+  input[type="checkbox"] {
+    min-width: 2rem;
+    min-height: 2rem;
+}

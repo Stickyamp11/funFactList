@@ -1,11 +1,7 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile, user } from '@angular/fire/auth';
 import { Observable, from } from 'rxjs';
-
-interface UserInterface{
-  email: string,
-  username: string
-}
+import { UserInterface } from './interfaces';
 
 @Injectable({
   providedIn: 'root'

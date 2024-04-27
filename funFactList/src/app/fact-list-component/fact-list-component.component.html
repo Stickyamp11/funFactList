@@ -1,7 +1,4 @@
 <section class="fact-section">
-    <div class="user-info" *ngIf="currentUserSig()">
-        Hello sir {{currentUserSig()?.email}} !
-    </div>
     <div class="fact-info-tab">
         <div class="fact-total">
             10
@@ -14,21 +11,6 @@
         </div>
     </div>
     <div class="fact-table-wrapper">
-        <table class="fact-main-table">
-            <tr>
-                <th>Liked</th>
-                <th>Fun fact</th>
-            </tr>
-            <ng-container *ngFor="let i of [1,2,3,4,5]">
-                <tr>
-                    <td>
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    </td>
-                    <td>
-                        Something to be determined...
-                    </td>
-                </tr>
-            </ng-container>
-            </table>
+        <app-generic-table [objects]="userFactsSig()" [columns]="tableColumns"/>
     </div>
 </section>

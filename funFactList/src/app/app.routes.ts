@@ -20,10 +20,12 @@ export const routes: Routes = [
     },
     {
         path: '',
-        component: RegisterComponent
+        canActivate: [authGuard],
+        component: FactListComponentComponent
     },
     {
         path: '**',
-        component: RegisterComponent
+        canActivate: [authGuard],
+        component: FactListComponentComponent
     }
 ];

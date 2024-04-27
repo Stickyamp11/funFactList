@@ -1,0 +1,9 @@
+<nav>
+    <div class="user-info" *ngIf="!currentUserSig()">
+        <div>Login</div>
+        <div>Register</div>
+    </div>
+    <div class="user-info" *ngIf="currentUserSig()">
+        Hello sir {{currentUserSig()?.email}} !
+    </div>
+</nav>

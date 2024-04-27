@@ -1,33 +1,3 @@
-.fact-table-wrapper{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.fact-main-table{
-    background-color: rgb(176, 204, 204);
-    border: 2px solid black;
-    border-radius: 0.5rem;
-    width: 70%;
-}
-
-th, td {
-    text-align: center;
-    padding: 15px;
-
-  }
-
-  tr:nth-child(even) {
-    background-color: #b1d6ba;
-  }
-
-  tr:hover {background-color: #d6c3ae;}
-
-  input[type="checkbox"] {
-    min-width: 2rem;
-    min-height: 2rem;
-}
-
 .fact-info-tab{
     display: flex;
     justify-content: center;

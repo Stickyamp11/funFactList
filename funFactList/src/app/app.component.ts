@@ -4,12 +4,13 @@ import { RouterOutlet } from '@angular/router';
 import { FactListComponentComponent } from './fact-list-component/fact-list-component.component';
 import { AuthService } from './shared/auth.service';
 import { RegisterComponent } from './register/register.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FactListComponentComponent, RegisterComponent],
+  imports: [CommonModule, RouterOutlet, FactListComponentComponent, RegisterComponent, MainMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

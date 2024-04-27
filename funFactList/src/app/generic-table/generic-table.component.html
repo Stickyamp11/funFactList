@@ -1,0 +1,15 @@
+<table class="fact-main-table">
+    <thead>
+        <tr>
+            <th *ngFor="let column of columns">
+                {{column}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let object of objects">
+            <td *ngFor="let column of columns">
+            {{object[column]}}
+            </td>
+        </tr>
+    </tbody>
